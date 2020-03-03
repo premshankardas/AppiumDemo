@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default Suite" duration-ms="38001810" started-at="2020-03-02T10:25:32Z" finished-at="2020-03-02T20:58:54Z">
+    <groups>
+    </groups>
+    <test name="AppiumDemo" duration-ms="38001810" started-at="2020-03-02T10:25:32Z" finished-at="2020-03-02T20:58:54Z">
+      <class name="tests.AmazonTest">
+        <test-method status="PASS" signature="setup()[pri:0, instance:tests.AmazonTest@1ed1993a]" name="setup" is-config="true" duration-ms="19086" started-at="2020-03-02T10:25:32Z" finished-at="2020-03-02T10:25:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="testOne()[pri:0, instance:tests.AmazonTest@1ed1993a]" name="testOne" duration-ms="37977100" started-at="2020-03-02T10:25:51Z" finished-at="2020-03-02T20:58:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testOne -->
+        <test-method status="FAIL" signature="teardown()[pri:0, instance:tests.AmazonTest@1ed1993a]" name="teardown" is-config="true" duration-ms="5495" started-at="2020-03-02T20:58:48Z" finished-at="2020-03-02T20:58:54Z">
+          <exception class="org.openqa.selenium.NoSuchSessionException">
+            <message>
+              <![CDATA[A session is either terminated or not started
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Prems-MacBook-Pro.local', ip: 'fe80:0:0:0:1ced:b0ff:feee:11a6%9', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14.5', java.version: '1.8.0_144'
+Driver info: io.appium.java_client.AppiumDriver
+Capabilities {appActivity: com.amazon.mShop.splashscre..., appPackage: com.amazon.mShop.android.sh..., databaseEnabled: false, desired: {appActivity: com.amazon.mShop.splashscre..., appPackage: com.amazon.mShop.android.sh..., deviceName: Redmi 6 Pro, newCommandTimeout: 60, noReset: false, platformName: android, platformVersion: 8.1.0, udid: 28d7f0ff0205}, deviceApiLevel: 27, deviceManufacturer: Xiaomi, deviceModel: Redmi 6 Pro, deviceName: 28d7f0ff0205, deviceScreenDensity: 440, deviceScreenSize: 1080x2280, deviceUDID: 28d7f0ff0205, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 60, noReset: false, pixelRatio: 2.75, platform: LINUX, platformName: LINUX, platformVersion: 8.1.0, statBarHeight: 110, takesScreenshot: true, udid: 28d7f0ff0205, viewportRect: {height: 2040, left: 0, top: 110, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: eab28b70-7a2b-4eba-bae6-2d336a39c192]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchSessionException: A session is either terminated or not started
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Prems-MacBook-Pro.local', ip: 'fe80:0:0:0:1ced:b0ff:feee:11a6%9', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14.5', java.version: '1.8.0_144'
+Driver info: io.appium.java_client.AppiumDriver
+Capabilities {appActivity: com.amazon.mShop.splashscre..., appPackage: com.amazon.mShop.android.sh..., databaseEnabled: false, desired: {appActivity: com.amazon.mShop.splashscre..., appPackage: com.amazon.mShop.android.sh..., deviceName: Redmi 6 Pro, newCommandTimeout: 60, noReset: false, platformName: android, platformVersion: 8.1.0, udid: 28d7f0ff0205}, deviceApiLevel: 27, deviceManufacturer: Xiaomi, deviceModel: Redmi 6 Pro, deviceName: 28d7f0ff0205, deviceScreenDensity: 440, deviceScreenSize: 1080x2280, deviceUDID: 28d7f0ff0205, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 60, noReset: false, pixelRatio: 2.75, platform: LINUX, platformName: LINUX, platformVersion: 8.1.0, statBarHeight: 110, takesScreenshot: true, udid: 28d7f0ff0205, viewportRect: {height: 2040, left: 0, top: 110, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: eab28b70-7a2b-4eba-bae6-2d336a39c192
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:46)
+at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+at org.openqa.selenium.remote.RemoteWebDriver.quit(RemoteWebDriver.java:452)
+at tests.BaseClass.teardown(BaseClass.java:58)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+at org.testng.TestRunner.afterRun(TestRunner.java:725)
+at org.testng.TestRunner.run(TestRunner.java:509)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:110)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchSessionException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- tests.AmazonTest -->
+    </test> <!-- AppiumDemo -->
+  </suite> <!-- Default Suite -->
+</testng-results>
